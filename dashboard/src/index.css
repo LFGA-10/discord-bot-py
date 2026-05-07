@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ginto+Nord:wght@700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --discord-blurple: #5865F2;
+  --discord-green: #57F287;
+  --discord-yellow: #FEE75C;
+  --discord-red: #ED4245;
+  --bg-dark: #313338;
+  --bg-darker: #1E1F22;
+  --bg-sidebar: #2B2D31;
+  --text-main: #DBDEE1;
+  --text-header: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: var(--bg-sidebar);
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  flex-col: column;
+}
+
+.main-view {
+  flex: 1;
+  background: var(--bg-dark);
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.discord-card {
+  background: var(--bg-darker);
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-blurple {
+  background: var(--discord-blurple);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-blurple:hover {
+  background: #4752C4;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--discord-green);
+  box-shadow: 0 0 10px var(--discord-green);
+}
